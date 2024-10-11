@@ -1115,6 +1115,76 @@ main {
 }
 
 
+/*-----------------------------------*\
+  #PUBLISHED ARTICLES WITH CATEGORY AND TRUNCATED ABSTRACT
+\*-----------------------------------*/
+
+.published-articles {
+  margin-bottom: 20px;
+}
+
+.published-articles-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.published-article-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  border-radius: 12px;
+  transition: var(--transition-1);
+  cursor: pointer;
+}
+
+.published-article-item:hover {
+  background: var(--eerie-black-1);
+}
+
+/* Titolo leggermente più grande */
+.published-article-item-title {
+  font-size: var(--fs-5); /* Aumentato di 2px rispetto al font-size predefinito */
+  font-weight: bold; /* Categoria in bold */
+  color: var(--light-gray-70);
+  margin-bottom: 5px;
+}
+
+/* Categoria in grassetto */
+.published-article-item-category {
+  font-size: calc(var(--fs-5) + 10);
+  font-weight: bold; /* Categoria in bold */
+  color: var(--light-gray);
+  margin-bottom: 8px;
+}
+
+/* Abstract in corsivo con line clamp */
+.published-article-item-abstract {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  color: var(--light-gray-70);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limita a 5 righe */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Mostra "..." alla fine */
+  font-style: italic; /* Abstract in corsivo */
+}
+
+.published-article-item a {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-400);
+  text-decoration: none;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.published-article-item a:hover {
+  text-decoration: underline;
+}
 
 
 

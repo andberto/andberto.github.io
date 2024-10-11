@@ -189,6 +189,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Articles</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -984,6 +988,40 @@
 
       </article>
 
+
+      <!--
+        - #Articles
+      -->
+
+      <article class="contact" data-page="articles">
+        <header>
+          <h2 class="h2 article-title">Articles</h2>
+        </header>
+        
+        <section class="published-articles">
+          <div class="published-articles-list">
+            
+            <div class="published-article-item">
+              <p class="published-article-item-category">Natural Language Processing and Deep Learning for Bankruptcy Prediction: An End-to-End Architecture</p>
+              <h3 class="published-article-item-title">G. Lombardo, A. Bertogalli, S. Consoli, D. R. Recupero, IEEE Access, 2024</h3>
+              <p class="published-article-item-abstract">Machine and Deep Learning methods are widely adopted to predict corporate bankruptcy events for their effectiveness. Bankruptcy prediction is commonly modeled as a binary classification task over accounting data where the positive label is associated with companies with a high likelihood of bankruptcy and the negative label with a low risk of failure. Most of the models mainly focus on exploiting accounting, stock market data, and data augmentation to deal with the intrinsic unbalance of this task. More recently, financial reports such as the US SEC annual reports have been investigated for feature engineering to boost the accuracy of the classification task. However, these approaches only marginally leverage Natural Language Processing advanced techniques to improve the prediction, by usually only leveraging dictionary-based approaches and word frequencies for feature engineering.</p>
+              <a href="https://ieeexplore.ieee.org/document/10711166">Read more</a>
+            </div>
+        
+            <div class="published-article-item">
+              <p class="published-article-item-category">Document embedding with Transformer for bankruptcy
+                prediction</p>
+              <h3 class="published-article-item-title">Andrea Bertogalli, Bachelor's thesis, 2022</h3>
+              <p class="published-article-item-abstract">The aim of this thesis is to create and implement an end-to-end trainable model that surpasses current models in bankruptcy prediction. The proposed approach combines a multi-head Long Short-Term Memory (LSTM) network and a Transformer. The LSTM network handles financial data, while the Transformer processes 10-K filings from publicly listed U.S. companies on the NYSE and NASDAQ, covering the period from 2000 to 2018. This hybrid architecture is expected to improve performance by leveraging the strengths of both models in analyzing structured financial data and unstructured text.</p>
+              <a href="./assets/docs/Thesis_Andrea_Bertogalli.pdf">Read more</a>
+            </div>
+            
+            <!-- Altri articoli -->
+            
+          </div>
+        </section>
+      </article>
+      
       <!--
         - #CONTACT
       -->
