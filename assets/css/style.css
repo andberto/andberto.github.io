@@ -1743,8 +1743,28 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article {
+  article {
     width: 950px;
+    box-shadow: var(--shadow-5);
+  }
+
+  /**
+   * SIDEBAR - fissata al centro verticale a sinistra (da 1024px)
+   */
+  body > .sidebar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    max-height: calc(100vh - 80px);
+    margin: 0;
+    padding: 30px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
     box-shadow: var(--shadow-5);
   }
 
@@ -1754,7 +1774,10 @@ textarea.form-input::-webkit-resizer { display: none; }
    * MAIN 
    */
 
-  main { margin-bottom: 60px; }
+  main {
+    margin-bottom: 60px;
+    margin-left: 325px;
+  }
 
   .main-content {
     position: relative;
@@ -1879,6 +1902,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: center;
     align-items: stretch;
     gap: 25px;
+    margin-left: 325px;
   }
 
   .main-content {
@@ -1890,17 +1914,23 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * SIDEBAR
+   * SIDEBAR - box fissato al centro verticale a sinistra
    */
 
-  .sidebar {
-    position: sticky;
-    top: 60px;
-    max-height: max-content;
-    height: 100%;
-    margin-bottom: 0;
-    padding-top: 60px;
-    z-index: 1;
+  body > .sidebar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    max-height: calc(100vh - 80px);
+    margin: 0;
+    padding: 30px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
   }
 
   .sidebar-info { flex-direction: column; }
@@ -1949,4 +1979,33 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+/* ============================================
+   SIDEBAR CENTRATA VERTICALMENTE A SINISTRA
+   (forzato in coda per evitare override)
+   ============================================ */
+
+@media (min-width: 768px) {
+  body > aside.sidebar {
+    position: fixed !important;
+    left: 20px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto 0 !important;
+    width: 280px !important;
+    max-height: calc(100vh - 80px) !important;
+    height: fit-content !important;
+    padding: 30px !important;
+    z-index: 100 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    overflow-y: auto !important;
+  }
+
+  main {
+    margin-left: 325px !important;
+  }
 }
