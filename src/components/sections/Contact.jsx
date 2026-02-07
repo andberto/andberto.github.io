@@ -99,14 +99,14 @@ export default function Contact() {
 
       <motion.div className="map-container" variants={itemVariants}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2797.5715603437015!2d9.2249537!3d45.4784339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f67dd11753%3A0x8e30fae1774a3377!2sPolitecnico%20di%20Milano!5e0!3m2!1sit!2sit!4v1671655099264!5m2!1sit!2sit"
+          src="https://www.google.com/maps?q=Parco+Area+delle+Scienze+49,+43124+Parma+PR,+Italy&output=embed"
           width="100%"
           height="300"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Location Map"
+          title="VisLab, Parma"
         />
       </motion.div>
 

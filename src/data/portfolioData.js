@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Andrea Bertogalli",
   title: "PhD Student @ VisLab / Ambarella Inc.",
   email: "andrea.bertogalli.it@gmail.com",
-  locations: ["Parma, Italy", "Milan, Italy"],
+  locations: ["VisLab, Parma, Italy"],
   linkedin: "https://www.linkedin.com/in/andrea-bertogalli-509383175",
   github: "https://github.com/andberto",
   avatar: "/images/myavatar.jpg"
