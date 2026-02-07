@@ -139,6 +139,8 @@ body {
   display: flex;
   align-items: center;
   padding: 6px 10px;
+  max-width: 100%;
+  min-width: 0;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 255, 255, 0.25);
@@ -157,6 +159,8 @@ body {
   gap: 2px;
   position: relative;
   padding: 0 2px;
+  min-width: 0;
+  flex-wrap: nowrap;
 }
 
 /* ---- Sliding pill (70s neon glow) ---- */
@@ -192,6 +196,9 @@ body {
   transition: color 0.25s ease, text-shadow 0.25s ease, border-color 0.25s ease;
   white-space: nowrap;
   text-align: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .top-nav .nav-btn:hover {
@@ -1677,12 +1684,12 @@ a.right-info-contact-item:hover {
   }
   
   .top-nav .nav-list {
-    gap: 6px;
+    gap: 4px;
   }
   
   .top-nav .nav-btn {
-    padding: 5px 10px;
-    font-size: 0.65rem;
+    padding: 4px 8px;
+    font-size: 0.6rem;
   }
   
   .content-panel {
