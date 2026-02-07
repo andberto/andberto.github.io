@@ -1573,6 +1573,12 @@ a.right-info-contact-item:hover {
     padding: 16px;
   }
   
+  /* Nav stessa larghezza dei box sotto (inset 12px come right/left panel) */
+  .top-nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
   .top-nav .nav-btn {
     padding: 6px 12px;
     font-size: 0.7rem;
@@ -1657,6 +1663,21 @@ a.right-info-contact-item:hover {
     max-width: none;
     padding: 12px;
     top: 60px;
+  }
+  
+  /* Top nav larga quanto i box (stesso inset 8px), sfera più visibile ai lati */
+  .top-nav {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .top-nav .navigation {
+    max-width: 100%;
+    margin: 0 18px;
+  }
+  
+  .top-nav .nav-list {
+    gap: 6px;
   }
   
   .top-nav .nav-btn {
